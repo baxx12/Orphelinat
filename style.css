@@ -49,16 +49,15 @@ header{
     font-family: OpenSans-CondBold;
 }
 .don-button{
-    background-color: #CE1E8B;
-    color: black;
+    background-color: #91BF51;
     padding: 10px 20px;
     border-radius: 20px;
     font-weight: bold;
     text-decoration: none;
-    transition: background-color 0.3 ease;
+    transition: background-color 0.6s;
 }
 .don-button:hover{
-    background-color: bisque;
+    background-color: #FFD233;
 }
 .hero-section{
     background: url('image/smallgirrl.jpg') no-repeat center center/cover;
@@ -442,7 +441,7 @@ animation: fadein 1.5s ease-in-out forwards;
     border-radius: 5px;
   }
   .contact-form button {
-    background-color: #cc6699;
+    background-color: #91BF51;
     color: black;
     font-family: OpenSans-CondBold;
     font-weight: bold;
@@ -450,10 +449,10 @@ animation: fadein 1.5s ease-in-out forwards;
     padding: 10px 15px;
     cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.6s;
   }
   .contact-form button:hover {
-    background-color: #a90057;
+    background-color: #FFD233;
   }
   .contact-info {
     width: 30%;
@@ -533,7 +532,8 @@ grid-template-areas:
 "item1 item2"
 "item3 item4"
 "item5 item6"
-"item7 item8";
+"item7 item8"
+"item9 item10";
 gap: 70px;
 padding: 70px;
 margin: auto;
@@ -546,6 +546,13 @@ object-fit: cover;
 border-radius: 10px;;
 transition: transform 0.3s ease-in-out;
 }
+.galerie-grid .item video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;;
+    transition: transform 0.3s ease-in-out;
+    }
 .galerie-section h1{
     color: #CE1E8B;
     margin-bottom: 20px;
@@ -553,6 +560,9 @@ transition: transform 0.3s ease-in-out;
     font-family: postnobillscolombo-bold;
 }
 .galerie-grid .item:hover img{
+    transform: scale(1.1);
+}
+.galerie-grid .item:hover video{
     transform: scale(1.1);
 }
 @keyframes fadein{
@@ -582,7 +592,8 @@ transition: transform 0.3s ease-in-out;
 "item1 item2"
 "item3 item4"
 "item5 item6"
-"item7 item8";
+"item7 item8"
+"item9 item10";
     }
     .description{
         font-size: 1.5rem;
@@ -599,7 +610,9 @@ transition: transform 0.3s ease-in-out;
     "item5"
     "item6"
     "item7"
-    "item8";
+    "item8"
+    "item9"
+    "item10";
 }
 }
 footer{
