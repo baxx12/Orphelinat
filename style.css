@@ -38,6 +38,12 @@ header{
     display: flex;
     align-items: center;
 }
+.menu-tog{
+    display: none;
+}
+.menu-toggle{
+    display: none;
+}
 .menu li{
     margin: 0 25px;
 }
@@ -175,11 +181,14 @@ header{
     font-family: postnobillscolombo-bold;
 }
 
-.hero-section1 image{
+.apropos-image{
     width: 40%;
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease;
+}
+.apropos-image:hover{
+    transform: scale(1.1);
 }
 .hero-section1 p{
     color: black;
@@ -196,11 +205,10 @@ padding: 15px;
 width: 100%;
 height: auto;
  } 
-    .hero-section1 image{
+    .apropos-image{
         text-align: center;
-        font-size: medium;
         width: 100%;
-height: auto;
+        height: auto;
     }  
     .hero-section1 p{
         font-size: 18px;
@@ -209,11 +217,10 @@ height: auto;
 height: auto;
     }
     @media screen and (max-width:480px) {
-        .hero-section1 image{
+        .apropos-image{
             text-align: center;
-            font-size: medium;
             width: 100%;
-height: auto;
+            height: auto;
         }
         .hero-section1 p{
             font-size: 16px;
@@ -221,9 +228,6 @@ height: auto;
 height: auto;
         }
     }
-}
-.donation-section{
-    padding: 50px;
 }
 .donation-title{
     text-align: center;
@@ -236,13 +240,18 @@ height: auto;
 .donation-content{
     display: flex;
     gap: 20px;
+    justify-content: center;
 }
 .donation-image{
     width: 40%;
     height: auto;
     border-radius: 10px;
-    margin-left: 40px;
+    transition: transform 0.3s ease;
 }
+.donation-image:hover{
+    transform: scale(1.1);
+}
+
 .donation-text{
     width: 55%;
     text-align: left;
@@ -285,7 +294,7 @@ ul li{
 @media screen and (max-width: 768px) {
     .donation-content{
         display: block;
-       text-align: center;
+        text-align: center;
     }
     .donation-image{
         text-align: center;
@@ -341,7 +350,7 @@ gap: 20px;
 width: 45%;
 border-radius: 10px;
 opacity: 0;
-animation: fadein 1.5s ease-in-out forwards;
+animation: fadein 3.5s ease-in-out forwards;
 }
 .event p{
     width: 50%;
