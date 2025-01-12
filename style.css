@@ -7,6 +7,7 @@ body{
     background-color: #d9d9d9;
     font-weight: bold;
 }
+/*Mise en place de la police*/
 @font-face{
     src: url(' ./font/postnobillscolombo-regular.ttf') format('truetype');
     font-family: postnobillscolombo-bold;
@@ -15,6 +16,7 @@ body{
     src: url(' ./font/OpenSans-CondBold.ttf') format('truetype');
     font-family: OpenSans-CondBold;
 }
+/*Retouche du menu*/
 header{
     position: fixed;
     top: 0;
@@ -65,6 +67,7 @@ header{
 .don-button:hover{
     background-color: #FFD233;
 }
+/*Retouche de la rubrique accueil*/
 .hero-section{
     background: url('image/smallgirrl.jpg') no-repeat center center/cover;
     height: 100vh;
@@ -163,6 +166,7 @@ header{
     font-size: 0.9em;
 }
 }
+/*Retouche de la rubrique a propos*/
 .hero-section1{
     padding: 25px;
     display: flex;
@@ -229,6 +233,7 @@ height: auto;
         }
     }
 }
+/*Retouche de la rubrique don*/
 .donation-title{
     text-align: center;
     font-size: 3rem;
@@ -323,6 +328,7 @@ height: auto;
 height: auto;
        }
    }
+   /*Retouche de la rubrique evenement*/
 .events-section{
     padding: 20px;
     text-align: center;
@@ -409,6 +415,7 @@ animation: fadein 3.5s ease-in-out forwards;
         text-align: center;
     }
 }
+/*Retouche de la rubrique contact*/
 .contact-section {
     padding: 20px;
     text-align: center;
@@ -529,6 +536,7 @@ animation: fadein 3.5s ease-in-out forwards;
       opacity: 1;
     }
   }
+  /*Retouche de la rubrique galerie*/
   .galerie-section{
     padding: 20px;
     text-align: center;
@@ -624,6 +632,7 @@ transition: transform 0.3s ease-in-out;
     "item10";
 }
 }
+/*Retouche du footer*/
 footer{
     background-color: #CE1E8B;
     text-align: center;
